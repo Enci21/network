@@ -4,12 +4,16 @@ public class ConnectedDevice extends Device {
 
     private int numberOfConnectedDevices;
 
-    public ConnectedDevice() {
+    public ConnectedDevice(int batteryLife) {
+        super(batteryLife);
         numberOfConnectedDevices++;
+        System.out.println(numberOfConnectedDevices);
     }
 
+
     public void calculatePower() {
-        setPower(- getAge() * 7 + 20*numberOfConnectedDevices);
+        setPower(-getAge() * 7 + 20 * numberOfConnectedDevices);
     }
+
 
 }

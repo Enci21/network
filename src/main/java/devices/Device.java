@@ -6,6 +6,11 @@ public abstract class Device {
     private int batteryLife;
     private int power;
 
+
+    public Device(int batteryLife) {
+        this.batteryLife = batteryLife;
+    }
+
     public abstract void calculatePower();
 
     public int getAge() {
