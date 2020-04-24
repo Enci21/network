@@ -10,6 +10,11 @@ public class Main {
         Network network = new Network();
 
         ConnectedDevice connectedDevice = new ConnectedDevice(50);
+        ConnectedDevice connectedDevice2 = new ConnectedDevice(50);
+        ConnectedDevice connectedDevice3 = new ConnectedDevice(50);
+        ConnectedDevice connectedDevice4 = new ConnectedDevice(50);
+        ConnectedDevice connectedDevice5 = new ConnectedDevice(50);
+        ConnectedDevice connectedDevice6 = new ConnectedDevice(50);
         SmartDevice smartDevice = new SmartDevice("SmartDevice kézi névvel", ScreenSize.FULLHD, 30);
         SmartDevice smartDevice2 = new SmartDevice(40, ScreenSize.UHD);
         SmartDevice smartDevice3 = new SmartDevice(40, ScreenSize.UHD);
@@ -21,6 +26,11 @@ public class Main {
         NormalDevice normalDevice4 = new NormalDevice(1988, ScreenSize.EDTV, 60);
 
         network.addDevice(connectedDevice);
+        network.addDevice(connectedDevice2);
+        network.addDevice(connectedDevice3);
+        network.addDevice(connectedDevice4);
+        network.addDevice(connectedDevice5);
+        network.addDevice(connectedDevice6);
         network.addDevice(smartDevice);
         network.addDevice(smartDevice2);
         network.addDevice(smartDevice3);
