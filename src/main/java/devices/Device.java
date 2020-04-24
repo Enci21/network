@@ -17,18 +17,6 @@ public abstract class Device {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getBatteryLife() {
-        return batteryLife;
-    }
-
-    public void setBatteryLife(int batteryLife) {
-        this.batteryLife = batteryLife;
-    }
-
     public int getPower() {
         return power;
     }

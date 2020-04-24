@@ -25,21 +25,21 @@ public class Main {
         NormalDevice normalDevice3 = new NormalDevice(2010, ScreenSize.EDTV, 60);
         NormalDevice normalDevice4 = new NormalDevice(1988, ScreenSize.EDTV, 60);
 
-        network.addDevice(connectedDevice);
-        network.addDevice(connectedDevice2);
-        network.addDevice(connectedDevice3);
-        network.addDevice(connectedDevice4);
-        network.addDevice(connectedDevice5);
-        network.addDevice(connectedDevice6);
-        network.addDevice(smartDevice);
-        network.addDevice(smartDevice2);
-        network.addDevice(smartDevice3);
-        network.addDevice(smartDevice4);
-        network.addDevice(smartDevice5);
-        network.addDevice(normalDevice);
-        network.addDevice(normalDevice2);
-        network.addDevice(normalDevice3);
-        network.addDevice(normalDevice4);
+        network.addConnectedDevice(connectedDevice);
+        network.addConnectedDevice(connectedDevice2);
+        network.addConnectedDevice(connectedDevice3);
+        network.addConnectedDevice(connectedDevice4);
+        network.addConnectedDevice(connectedDevice5);
+        network.addConnectedDevice(connectedDevice6);
+        network.addSmartDevice(smartDevice);
+        network.addSmartDevice(smartDevice2);
+        network.addSmartDevice(smartDevice3);
+        network.addSmartDevice(smartDevice4);
+        network.addSmartDevice(smartDevice5);
+        network.addNormalDevice(normalDevice);
+        network.addNormalDevice(normalDevice2);
+        network.addNormalDevice(normalDevice3);
+        network.addNormalDevice(normalDevice4);
 
         network.getDevices().stream().forEach(d -> System.out.println(d.getClass().getSimpleName()));
 
