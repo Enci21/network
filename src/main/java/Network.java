@@ -9,8 +9,8 @@ import java.util.List;
 public class Network {
 
     private List<Device> devices = new ArrayList();
-    private int connectedDeviceCounter;
 
+    private int connectedDeviceCounter;
 
     public void addSmartDevice(SmartDevice device) {
         devices.add(device);
@@ -18,8 +18,8 @@ public class Network {
 
     public void addConnectedDevice(ConnectedDevice device) {
         connectedDeviceCounter++;
-        devices.add(device);
         device.setNumberOfConnectedDevices(connectedDeviceCounter);
+        devices.add(device);
     }
 
     public void addNormalDevice(NormalDevice device) {
@@ -30,5 +30,7 @@ public class Network {
         return devices;
     }
 
-
+    public int getConnectedDeviceCounter() {
+        return connectedDeviceCounter;
+    }
 }

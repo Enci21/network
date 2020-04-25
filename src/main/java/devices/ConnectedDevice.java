@@ -2,11 +2,10 @@ package devices;
 
 public class ConnectedDevice extends Device {
 
-    private int numberOfConnectedDevices;
+    public int numberOfConnectedDevices;
 
     public ConnectedDevice(int batteryLife) {
         super(batteryLife);
-        System.out.println(numberOfConnectedDevices);
     }
 
     public void calculatePower() {
@@ -15,5 +14,9 @@ public class ConnectedDevice extends Device {
 
     public void setNumberOfConnectedDevices(int numberOfConnectedDevices) {
         this.numberOfConnectedDevices = numberOfConnectedDevices;
+    }
+
+    public int getNumberOfConnectedDevices() {
+        return numberOfConnectedDevices;
     }
 }

@@ -15,6 +15,7 @@ public class Main {
         ConnectedDevice connectedDevice4 = new ConnectedDevice(50);
         ConnectedDevice connectedDevice5 = new ConnectedDevice(50);
         ConnectedDevice connectedDevice6 = new ConnectedDevice(50);
+
         SmartDevice smartDevice = new SmartDevice("SmartDevice kézi névvel", ScreenSize.FULLHD, 30);
         SmartDevice smartDevice2 = new SmartDevice(40, ScreenSize.UHD);
         SmartDevice smartDevice3 = new SmartDevice(40, ScreenSize.UHD);
@@ -31,6 +32,11 @@ public class Main {
         network.addConnectedDevice(connectedDevice4);
         network.addConnectedDevice(connectedDevice5);
         network.addConnectedDevice(connectedDevice6);
+
+        System.out.println("Networkben = " + network.getConnectedDeviceCounter());
+        System.out.println(connectedDevice3.numberOfConnectedDevices);
+        System.out.println(connectedDevice4.numberOfConnectedDevices);
+        System.out.println(connectedDevice5.numberOfConnectedDevices);
         network.addSmartDevice(smartDevice);
         network.addSmartDevice(smartDevice2);
         network.addSmartDevice(smartDevice3);
