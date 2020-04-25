@@ -18,7 +18,7 @@ public class Network {
 
     public void addConnectedDevice(ConnectedDevice device) {
         connectedDeviceCounter++;
-        device.setNumberOfConnectedDevices(connectedDeviceCounter);
+        device.setNumberOfConnectedDevices(this::getConnectedDeviceCounter);
         devices.add(device);
     }
 

@@ -1,22 +1,24 @@
 package devices;
 
+import java.util.function.Supplier;
+
 public class ConnectedDevice extends Device {
 
-    public int numberOfConnectedDevices;
+    private Supplier<Integer> numberOfConnectedDevices;
 
     public ConnectedDevice(int batteryLife) {
         super(batteryLife);
     }
 
     public void calculatePower() {
-        setPower(-getAge() * 7 + 20 * numberOfConnectedDevices);
+        setPower(-getAge() * 7 + 20 * numberOfConnectedDevices.get());
     }
 
-    public void setNumberOfConnectedDevices(int numberOfConnectedDevices) {
-        this.numberOfConnectedDevices = numberOfConnectedDevices;
-    }
-
-    public int getNumberOfConnectedDevices() {
+    public Supplier<Integer> getNumberOfConnectedDevices() {
         return numberOfConnectedDevices;
+    }
+
+    public void setNumberOfConnectedDevices(Supplier<Integer> numberOfConnectedDevices) {
+        this.numberOfConnectedDevices = numberOfConnectedDevices;
     }
 }

@@ -33,21 +33,16 @@ public class Main {
         network.addConnectedDevice(connectedDevice5);
         network.addConnectedDevice(connectedDevice6);
 
-        System.out.println("Networkben = " + network.getConnectedDeviceCounter());
-        System.out.println(connectedDevice3.numberOfConnectedDevices);
-        System.out.println(connectedDevice4.numberOfConnectedDevices);
-        System.out.println(connectedDevice5.numberOfConnectedDevices);
         network.addSmartDevice(smartDevice);
         network.addSmartDevice(smartDevice2);
         network.addSmartDevice(smartDevice3);
         network.addSmartDevice(smartDevice4);
         network.addSmartDevice(smartDevice5);
+
         network.addNormalDevice(normalDevice);
         network.addNormalDevice(normalDevice2);
         network.addNormalDevice(normalDevice3);
         network.addNormalDevice(normalDevice4);
-
-        network.getDevices().stream().forEach(d -> System.out.println(d.getClass().getSimpleName()));
 
     }
 }
