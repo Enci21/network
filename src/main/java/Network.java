@@ -43,10 +43,6 @@ public class Network {
         smartDevice.setNumberOfNormalDevices(normalDevicesInRange.size());
     }
 
-    public List<NormalDevice> getNormalDevices() {
-        return normalDevices;
-    }
-
     public int getConnectedDeviceCounter() {
         return connectedDeviceCounter;
     }

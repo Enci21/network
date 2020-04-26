@@ -39,10 +39,6 @@ public class Main {
         network.addSmartDevice(smartDevice4);
         network.addSmartDevice(smartDevice5);
 
-        System.out.println("SmartdEVICE RANGES FOS 3 =" + smartDevice3.getNumberOfNormalDevices());
-        System.out.println("SmartdEVICE RANGES FOS 4=" + smartDevice4.getNumberOfNormalDevices());
-        System.out.println("SmartdEVICE RANGES FOS 5=" + smartDevice5.getNumberOfNormalDevices());
-
         network.addConnectedDevice(connectedDevice);
         network.addConnectedDevice(connectedDevice2);
         network.addConnectedDevice(connectedDevice3);

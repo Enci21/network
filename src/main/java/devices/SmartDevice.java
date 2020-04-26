@@ -41,10 +41,6 @@ public class SmartDevice extends Device {
         return range;
     }
 
-    public int getNumberOfNormalDevices() {
-        return numberOfNormalDevices;
-    }
-
     public void setNumberOfNormalDevices(int numberOfNormalDevices) {
         this.numberOfNormalDevices = numberOfNormalDevices;
     }
