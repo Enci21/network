@@ -7,9 +7,11 @@ public abstract class Device {
     private int power;
 
 
-    public Device(int batteryLife) {
+    public Device(int batteryLife, int age) {
         this.batteryLife = batteryLife;
+        this.age = age;
     }
+
 
     public abstract void calculatePower();
 
@@ -23,5 +25,9 @@ public abstract class Device {
 
     public void setPower(int power) {
         this.power = power;
+    }
+
+    public int getBatteryLife() {
+        return batteryLife;
     }
 }

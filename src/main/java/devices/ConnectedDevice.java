@@ -6,16 +6,17 @@ public class ConnectedDevice extends Device {
 
     private Supplier<Integer> numberOfConnectedDevices;
 
-    public ConnectedDevice(int batteryLife) {
-        super(batteryLife);
+    public ConnectedDevice(int batteryLife, int age) {
+        super(batteryLife, age);
     }
 
     public void calculatePower() {
-        setPower(-getAge() * 7 + 20 * numberOfConnectedDevices.get());
-    }
+        if (numberOfConnectedDevices == null) {
+            setPower(getBatteryLife() - getAge() * 7);
+        } else {
 
-    public Supplier<Integer> getNumberOfConnectedDevices() {
-        return numberOfConnectedDevices;
+            setPower(getBatteryLife() - getAge() * 7 + 20 * numberOfConnectedDevices.get());
+        }
     }
 
     public void setNumberOfConnectedDevices(Supplier<Integer> numberOfConnectedDevices) {
